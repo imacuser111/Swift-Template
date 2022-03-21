@@ -10,6 +10,7 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     
     let collectionView: UICollectionView = {
         let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout())
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
         return collectionView
     }()
     
