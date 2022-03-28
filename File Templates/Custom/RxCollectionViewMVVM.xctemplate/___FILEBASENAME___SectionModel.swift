@@ -55,7 +55,7 @@ extension ___FILEBASENAMEASIDENTIFIER___ {
 extension ___FILEBASENAMEASIDENTIFIER___ {
     /// 設定列表
     /// - Returns: 設定列表
-    static func Section() -> [___FILEBASENAMEASIDENTIFIER___] {
+    static func section() -> [___FILEBASENAMEASIDENTIFIER___] {
         return [<#___FILEBASENAMEASIDENTIFIER___#>]
     }
 }
