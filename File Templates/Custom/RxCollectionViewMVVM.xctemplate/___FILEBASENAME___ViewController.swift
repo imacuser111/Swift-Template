@@ -6,7 +6,7 @@ import RxDataSources
 
 class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     
-    typealias SectionModelType = ___VARIABLE_productName:identifier___SectionModel
+    typealias SectionModel = ___VARIABLE_productName:identifier___SectionModel
     
     typealias ViewModel = ___VARIABLE_productName:identifier___ViewModel
     

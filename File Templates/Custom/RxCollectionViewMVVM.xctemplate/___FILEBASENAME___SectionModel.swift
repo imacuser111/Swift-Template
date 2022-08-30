@@ -23,7 +23,7 @@ struct ___FILEBASENAMEASIDENTIFIER___: SectionModel {
     /// - Parameters:
     ///   - original: when get datasource that call func
     ///   - items: sections's Array
-    init(original: ___FILEBASENAMEASIDENTIFIER___, items: [Item]) {
+    init(original: Self, items: [Item]) {
         self = original
         self.items = items
     }
@@ -55,7 +55,7 @@ extension ___FILEBASENAMEASIDENTIFIER___ {
 extension ___FILEBASENAMEASIDENTIFIER___ {
     /// 設定列表
     /// - Returns: 設定列表
-    static func section() -> [___FILEBASENAMEASIDENTIFIER___] {
-        return [<#___FILEBASENAMEASIDENTIFIER___#>]
+    static var section: [Self] {
+        return [Self]
     }
 }
