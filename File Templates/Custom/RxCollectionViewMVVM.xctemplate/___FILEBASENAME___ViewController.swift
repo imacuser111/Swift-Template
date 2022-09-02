@@ -16,9 +16,9 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
         return collectionView
     }()
     
-    private lazy var dataSource = RxCollectionViewSectionedAnimatedDataSource<SectionModelType>(configureCell: configureCell)
+    private lazy var dataSource = RxCollectionViewSectionedAnimatedDataSource<SectionModel>(configureCell: configureCell)
     
-    private lazy var configureCell: RxCollectionViewSectionedAnimatedDataSource<SectionModelType>.ConfigureCell = { [weak self] (dataSource, collectionView, indexPath, item) in
+    private lazy var configureCell: RxCollectionViewSectionedAnimatedDataSource<SectionModel>.ConfigureCell = { [weak self] (dataSource, collectionView, indexPath, item) in
         
         return <#UICollectionViewCell#>
     }

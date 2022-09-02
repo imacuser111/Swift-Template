@@ -56,6 +56,6 @@ extension ___FILEBASENAMEASIDENTIFIER___ {
     /// 設定列表
     /// - Returns: 設定列表
     static var section: [Self] {
-        return [Self]
+        return [<#___FILEBASENAMEASIDENTIFIER___#>]
     }
 }
