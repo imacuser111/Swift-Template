@@ -1,5 +1,5 @@
 cd ~/Desktop
-git clone http://192.168.12.29/Cheng-Hong/ios_template
+git clone https://github.com/imacuser111/Swift-Template
 cd ~/Library/Developer/Xcode
 rm -r -f Templates
-mv ~/Desktop/ios_template ~/Library/Developer/Xcode/Templates
+mv ~/Desktop/Swift-Template ~/Library/Developer/Xcode/Templates
