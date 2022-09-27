@@ -45,7 +45,7 @@ extension ___FILEBASENAMEASIDENTIFIER___: Codable, FetchableRecord, PersistableR
 
 extension GRDBManager {
     /// Access to the entitys database
-    var entitys: ___VARIABLE_productName:identifier___s {
+    var <#your variable name#>: ___VARIABLE_productName:identifier___s {
         .init(dbWriter: dbWriter)
     }
 }
