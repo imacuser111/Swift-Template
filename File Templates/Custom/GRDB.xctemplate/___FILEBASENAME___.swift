@@ -42,3 +42,10 @@ extension ___FILEBASENAMEASIDENTIFIER___: Codable, FetchableRecord, PersistableR
         id = rowID
     }
 }
+
+extension GRDBManager {
+    /// Access to the entitys database
+    var entitys: ___VARIABLE_productName:identifier___s {
+        .init(dbWriter: dbWriter)
+    }
+}
