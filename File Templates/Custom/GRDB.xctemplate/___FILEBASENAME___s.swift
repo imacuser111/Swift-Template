@@ -14,16 +14,20 @@ struct ___FILEBASENAMEASIDENTIFIER___ {
     
     // MARK: - Modify Entitys
     
-    func insert(_ entity: ___VARIABLE_productName:identifier___) -> Single<Void> {
+    func rx_insert(_ entity: ___VARIABLE_productName:identifier___) -> Single<Void> {
         dbWriter.rx.write(updates: { db in try _insert(db, entity: entity) })
     }
     
-    func deleteAll() -> Single<Void> {
+    func rx_deleteAll() -> Single<Void> {
         dbWriter.rx.write(updates: _deleteAll)
     }
     
-    func deleteOne(_ entity: ___VARIABLE_productName:identifier___) -> Single<Void> {
+    func rx_deleteOne(_ entity: ___VARIABLE_productName:identifier___) -> Single<Void> {
         dbWriter.rx.write(updates: { db in try _deleteOne(db, entity: entity) })
+    }
+    
+    func rx_update(_ entity: ___VARIABLE_productName:identifier___) -> Single<Void> {
+        dbWriter.rx.write(updates: { db in try _update(db, entity: entity) })
     }
     
     // MARK: - Access Entitys
@@ -84,12 +88,12 @@ extension ___FILEBASENAMEASIDENTIFIER___ {
     
     /// 新增entity
     /// - Parameter entity: 實例
-    func insertEntity(_ entity: ___VARIABLE_productName:identifier___) throws {
+    func insert(_ entity: ___VARIABLE_productName:identifier___) throws {
         try dbWriter.write { db in try _insert(db, entity: entity) }
     }
     
     /// 刪除所有entity
-    func deleteAllEntitys() throws {
+    func deleteAll() throws {
         _ = try dbWriter.write(_deleteAll)
     }
     
@@ -101,7 +105,7 @@ extension ___FILEBASENAMEASIDENTIFIER___ {
     
     /// 更新entity
     /// - Parameter entity: 實例
-    func updateEntity(_ entity: ___VARIABLE_productName:identifier___) throws {
+    func update(_ entity: ___VARIABLE_productName:identifier___) throws {
         try dbWriter.write { db in try _update(db, entity: entity)}
     }
     
@@ -109,7 +113,7 @@ extension ___FILEBASENAMEASIDENTIFIER___ {
     
     /// 讀取entity
     /// - Returns: 所有實例
-    func fetchAllEntitys() throws -> [___VARIABLE_productName:identifier___] {
+    func fetchAll() throws -> [___VARIABLE_productName:identifier___] {
         try dbWriter.read(_fetchAll)
     }
 }
