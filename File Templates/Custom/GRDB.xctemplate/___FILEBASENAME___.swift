@@ -8,7 +8,7 @@ import GRDB
 /// Identifiable conformance supports SwiftUI list animations, and type-safe
 /// GRDB primary key methods.
 /// Equatable conformance supports tests.
-struct ___FILEBASENAMEASIDENTIFIER___: Identifiable, Equatable {
+struct ___FILEBASENAMEASIDENTIFIER___: Codable {
     /// The entity id.
     ///
     /// Int64 is the recommended type for auto-incremented database ids.
@@ -26,7 +26,7 @@ struct ___FILEBASENAMEASIDENTIFIER___: Identifiable, Equatable {
 /// Make entity a Codable Record.
 ///
 /// See <https://github.com/groue/GRDB.swift/blob/master/README.md#records>
-extension ___FILEBASENAMEASIDENTIFIER___: Codable, FetchableRecord, PersistableRecord, MutablePersistableRecord {
+extension ___FILEBASENAMEASIDENTIFIER___: FetchableRecord, PersistableRecord, MutablePersistableRecord {
     // Define database columns from CodingKeys
     enum Columns {
         static let id = Column(CodingKeys.id)

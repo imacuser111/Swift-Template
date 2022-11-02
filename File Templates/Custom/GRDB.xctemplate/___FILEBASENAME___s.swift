@@ -32,14 +32,14 @@ struct ___FILEBASENAMEASIDENTIFIER___ {
     
     // MARK: - Access Entitys
     
-    func fetchAll() -> Observable<[___VARIABLE_productName:identifier___]> {
+    func rx_fetchAll() -> Observable<[___VARIABLE_productName:identifier___]> {
         ValueObservation
             .tracking(_fetchAll)
             .rx.observe(in: dbWriter)
     }
     
     /// An observable that tracks changes in the Entitys
-    func EntitysOrderedByID() -> Observable<[___VARIABLE_productName:identifier___]> {
+    func entitysOrderedByID() -> Observable<[___VARIABLE_productName:identifier___]> {
         ValueObservation
             .tracking(___VARIABLE_productName:identifier___.all().orderByID().fetchAll)
             .rx.observe(in: dbWriter)
