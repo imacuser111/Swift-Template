@@ -135,7 +135,3 @@ cd ~/Library/Developer/Xcode
 rm -r -f Templates
 mv ~/Desktop/"你的檔案名稱" ~/Library/Developer/Xcode/Templates
 ```
-    
-## GitLab
-    
-[http://192.168.12.29/Cheng-Hong/ios_template](http://192.168.12.29/Cheng-Hong/ios_template)
