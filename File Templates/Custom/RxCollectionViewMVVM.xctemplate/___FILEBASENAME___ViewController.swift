@@ -30,6 +30,7 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.addSubview(collectionView)
         setupAllConstraint(collectionView)
         
         setupBindings()
