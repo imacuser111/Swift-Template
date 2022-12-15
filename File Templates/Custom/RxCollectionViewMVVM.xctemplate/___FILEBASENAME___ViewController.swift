@@ -11,7 +11,7 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     typealias ViewModel = ___VARIABLE_productName:identifier___ViewModel
     
     let collectionView: UICollectionView = {
-        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: .init())
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         return collectionView
     }()
